@@ -9,25 +9,24 @@
     }
   </style>
   <script>
+    function guess(){
+    var guess=prompt("您猜色子数是多少？");
+    if(guess==a){
+    document.write("中了！");
+    }
+    else if(guess>a){
+    document.write("您猜大了！");
+    }
+    else{
+    document.write("您猜小了！");
+    }
+                     }
+    
     var a=Math.random();
-    if(a<1/6){
-    document.write(1);
-    }
-    else if(a<2/6){
-    document.write(2);
-    }
-    else if(a<1/2){
-    document.write(3);
-    }
-    else if(a<2/3){
-    document.write(4);
-    }
-    else if(a<5/6){
-    document.write(5);
-    }
-    else if(a<1){
-    document.write(6);
-    }
+    a=Math.floor(a*6)+1;
+    
+    guess();
+    guess();
   </script>
     
 
