@@ -8,21 +8,27 @@
     font-size:100px;
     }
   </style>
-  <script>
+  
+</head>
+<body>
+ <p id="demo"></p>  
+</body>
+
+<script>
     function guess(){
     if(binggo){
     return;
     }
     var guess=prompt("您猜色子数是多少？");
     if(guess==a){
-    document.write("中了！");
+    document.getElementById("demo").innerHTML="中了";
       binggo=ture;
     }
     else if(guess>a){
-    document.write("您猜大了！");
+    document.getElementById("demo").innerHTML="您猜大了！";
     }
     else{
-    document.write("您猜小了！");
+   document.getElementById("demo").innerHTML="您猜小了！";
     }
                      }
     
@@ -36,10 +42,6 @@
   </script>
     
 
-</head>
-<body>
-   
-</body>
 </html>
       
     
