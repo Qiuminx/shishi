@@ -6,13 +6,20 @@
   <style>
     html,body{
       height:100%;
+      text-align:center;
+      font-size:200px;
     }
   </style>
 <script>
   var num=0;
   function gogogo(){
-    document.body.innerHTML=document.body.innerHTML+num;
+   if(num%7==0){
+   document.body.innerHTML="pass";
+   }else{
+     document.body.innerHTML=num;
+   }
     num=num+1;
+  
   }
   </script> 
 </head>
