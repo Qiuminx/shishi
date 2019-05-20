@@ -14,13 +14,20 @@
 </head>
 <body >
   <audio id="bgm" src="mp3/1.mp3" preload="auto" autoplay="autoplay" loop="loop">
-    <div id="bgmButton"onclick="control()"></div>
+    <div id="bgmButton" onclick="control()"></div>
 
 </body>
 <script>
+  var isPlaying=ture;
   function control(){
+    if(isPlaying){
     document.getElementById("bgm").pause();
   }
+  else{
+    document.getElementById("bgm").start();
+  }
+  }
+    
   </script>
     
 
