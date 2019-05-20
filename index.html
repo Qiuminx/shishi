@@ -4,45 +4,14 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    body{
-    font-size:100px;
+    html,body{
+      height:100%
     }
-  </style>
-  
 </head>
-<body>
- <p id="demo"></p>  
-</body>
-
-<script>
-  var a=Math.random();
-  var binggo=false;
-  
-    function guess(){
-    if(binggo){
-    return;
-    }
-    var guess=prompt("您猜色子数是多少？");
-    console.log("random===="+a);
-    console.info("guess===="+guess);
-    if(guess==a){
-    document.getElementById("demo").innerHTML="中了";
-      binggo=ture;
-    }
-    else if(guess>a){
-    document.getElementById("demo").innerHTML="您猜大了！";
-    }
-    else{
-    document.getElementById("demo").innerHTML="您猜小了！";
-    }
-                     }
+<body onclick="alert(123)">
+ 
     
     
-    a=Math.floor(a*6)+1;
-    console.log(a);
-    
-    guess();
-    guess();
   </script>
     
 
