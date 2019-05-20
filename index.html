@@ -4,26 +4,17 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    html,body{
-      height:100%;
-      text-align:center;
-      font-size:200px;
+    #bgmButton{
+      height:100px;
+      width:100px;
+      background-image:url("images/music.gif");
     }
   </style>
-<script>
-  var num=0;
-  function gogogo(){
-   if(num%7==0){
-   document.body.innerHTML="pass";
-   }else{
-     document.body.innerHTML=num;
-   }
-    num=num+1;
-  
-  }
-  </script> 
+
 </head>
-<body onclick="gogogo()">
+<body >
+  <audio id="bgm"scr="mp3/1.wav"preload="auto"autoplay="autoplay"loop="loop">
+    <div id="bgmButton"onclick="control()"></div>
 
 </body>
    
