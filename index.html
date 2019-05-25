@@ -1,47 +1,6 @@
-<!DOCTYPE html>
+def text(*a):
+	print('参数的长度：',len(a))
+	print('第二个参数是：',a[1])
 
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <title>Title</title>
-
-</head>
-
-<body onload="go()">
-
-
-
-</body>
-
-<script>
-
-    function go(){
-
-        var r = 3*Math.random();
-
-        if(r<1){
-
-            document.body.innerHTML="<img src='images/rock.png'>";
-
-        }
-
-        else if(r<2){
-
-            document.body.innerHTML="<img src='images/scissors.png'>";
-
-        }
-
-        else{
-
-            document.body.innerHTML="<img src='images/paper.png'>";
-
-        }
-
-    }
-
-</script>
-
-</html>
+	
+ text(1,'小星',56,2.3,8)
